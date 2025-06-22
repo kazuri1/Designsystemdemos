@@ -1,0 +1,64 @@
+@import "../styles/system/_tokens.scss";
+@import "../styles/components/_tokens.scss";
+
+.searchbar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: $comp-searchbar-bg;
+  border: 1.5px solid $comp-searchbar-border;
+  border-radius: $comp-searchbar-radius;
+  box-shadow: $comp-searchbar-shadow;
+  padding: $comp-searchbar-padding;
+  width: 100%;
+  max-width: 900px;
+  transition: all 0.25s ease-in-out;
+}
+.searchbar-container:focus-within {
+  border-color: $comp-searchbar-border-color-focus;
+  box-shadow: $comp-searchbar-shadow-focus;
+  transform: scale(1.01);
+}
+.searchbar-icon {
+  color: $comp-searchbar-icon-color;
+  font-size: $comp-icon-size-md;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+.searchbar-quote {
+  font-family: $comp-searchbar-quote-font-family;
+}
+.searchbar-text-display {
+  position: absolute;
+  left: $comp-searchbar-text-left-spacing;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: $comp-searchbar-font-size;
+  font-family: $comp-searchbar-font-family;
+  color: #3a4252;
+}
+.searchbar-placeholder {
+  position: absolute;
+  left: $comp-searchbar-text-left-spacing;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: $comp-searchbar-font-size;
+  font-family: $comp-searchbar-font-family;
+  color: #a0a0a0;
+}
+.searchbar-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: $comp-searchbar-font-size;
+  font-family: $comp-searchbar-font-family;
+  color: transparent; // Hide the actual input text
+  width: 100%;
+  padding-left: 40px; // Add padding to avoid text overlap with icon
+  &::placeholder {
+    color: transparent;
+  }
+}

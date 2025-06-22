@@ -1,0 +1,165 @@
+@import "../styles/system/_tokens.scss";
+@import "../styles/components/_tokens.scss";
+
+.togel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $comp-togel-bg-gradient;
+  border: none;
+  border-radius: $comp-togel-radius;
+  padding: $comp-togel-padding;
+  cursor: pointer;
+  min-width: 200px;
+  min-height: 56px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.togel-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform $comp-togel-anim-duration $comp-togel-anim-ease;
+}
+
+.togel-button:not(.togel-button--off) .togel-label {
+  transform: translateX($comp-togel-label-shift-x-on);
+}
+
+.togel-button--off .togel-label {
+  transform: translateX($comp-togel-label-shift-x-off);
+}
+
+.togel-super {
+  color: $comp-togel-text-super;
+  font-weight: $comp-togel-font-weight-super;
+  font-size: $comp-togel-font-size-super;
+  text-shadow: $comp-togel-shadow-super;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.togel-saver {
+  color: $comp-togel-text-saver;
+  font-weight: $comp-togel-font-weight-saver;
+  font-size: $comp-togel-font-size-saver;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.togel-circle {
+  position: absolute;
+  width: $comp-togel-circle-size;
+  height: $comp-togel-circle-size;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 1;
+  transition: opacity $comp-togel-anim-duration $comp-togel-anim-ease,
+    transform $comp-togel-anim-duration $comp-togel-anim-ease;
+}
+
+.togel-coin-right {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.togel-coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.togel-button--off {
+  background: $comp-togel-off-bg;
+}
+.togel-super--off {
+  color: $comp-togel-off-text-super;
+  text-shadow: $comp-togel-off-shadow-super;
+}
+.togel-saver--off {
+  color: $comp-togel-off-text-saver;
+}
+.togel-button--off .togel-coin {
+  background: $comp-togel-off-coin-bg;
+  border: 3px solid $comp-togel-off-coin-border;
+}
+
+.togel-button:not(.togel-button--off) .togel-circle {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.togel-button--off .togel-coin-right {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.togel-morpher {
+  position: absolute;
+  top: 50%;
+  left: $comp-togel-morpher-left;
+  transform: translateY(-50%) scale($comp-togel-morpher-scale-off);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $comp-togel-circle-size;
+  height: $comp-togel-circle-size;
+  cursor: pointer;
+  z-index: 2;
+  transition: left $comp-togel-anim-duration $comp-togel-anim-ease,
+    right $comp-togel-anim-duration $comp-togel-anim-ease,
+    transform $comp-togel-anim-duration $comp-togel-anim-ease;
+}
+.togel-morpher--on {
+  left: auto;
+  right: $comp-togel-morpher-right;
+  transform: translateY(-50%) scale($comp-togel-morpher-scale-on);
+}
+.togel-morpher--off {
+  left: $comp-togel-morpher-left;
+  right: auto;
+  transform: translateY(-50%) scale($comp-togel-morpher-scale-off);
+}
+.togel-morpher--on .togel-circle {
+  opacity: 0;
+  transform: scale($comp-togel-morph-scale-off);
+}
+.togel-morpher--off .togel-circle {
+  opacity: 1;
+  transform: scale($comp-togel-morph-scale-on);
+}
+.togel-coin-morph {
+  position: absolute;
+  width: $comp-togel-circle-size;
+  height: $comp-togel-circle-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale($comp-togel-morph-scale-off);
+  transition: opacity $comp-togel-anim-duration $comp-togel-anim-ease,
+    transform $comp-togel-anim-duration $comp-togel-anim-ease;
+}
+.togel-morpher--on .togel-coin-morph {
+  opacity: 1;
+  transform: scale($comp-togel-morph-scale-on);
+}
+.togel-morpher--off .togel-coin-morph {
+  opacity: 0;
+  transform: scale($comp-togel-morph-scale-off);
+}
