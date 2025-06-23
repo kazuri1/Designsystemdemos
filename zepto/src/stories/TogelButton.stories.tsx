@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { TogelButton } from "../components/atoms/TogelButton";
 
 const meta = {
-  title: "Example/TogelButton",
+  title: "Atoms/TogelButton",
   component: TogelButton,
   parameters: {
     layout: "centered",

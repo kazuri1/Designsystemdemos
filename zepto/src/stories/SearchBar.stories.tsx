@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { SearchBar } from "../components/molecules/SearchBar";
 
 const meta = {
-  title: "Example/SearchBar",
+  title: "Atoms/SearchBar",
   component: SearchBar,
   parameters: {
     layout: "centered",

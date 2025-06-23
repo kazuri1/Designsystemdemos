@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { LocationSelector } from "../components/atoms/LocationSelector";
 
 const meta = {
-  title: "Example/LocationSelector",
+  title: "Atoms/LocationSelector",
   component: LocationSelector,
   parameters: {
     layout: "centered",

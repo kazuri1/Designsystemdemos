@@ -87,12 +87,15 @@
 .togel-button--off {
   background: $comp-togel-off-bg;
 }
-.togel-super--off {
-  color: $comp-togel-off-text-super;
-  text-shadow: $comp-togel-off-shadow-super;
-}
+.togel-super--off,
 .togel-saver--off {
-  color: $comp-togel-off-text-saver;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #576274;
+  text-stroke: 2px #576274;
+  text-shadow: 2px 2px 0 #576274, 0 4px 8px rgba(0, 0, 0, 0.15);
+  letter-spacing: 1px;
 }
 .togel-button--off .togel-coin {
   background: $comp-togel-off-coin-bg;

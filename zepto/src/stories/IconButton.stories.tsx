@@ -7,7 +7,7 @@ import "../styles/theme.scss";
 
 // --- Storybook Meta ---
 const meta = {
-  title: "Example/IconButton",
+  title: "Atoms/IconButton",
   component: IconButton,
   parameters: {
     layout: "centered",
