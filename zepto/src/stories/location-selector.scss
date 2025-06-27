@@ -14,6 +14,7 @@
   font-size: $comp-locationselector-font-size;
   color: $comp-locationselector-text-color;
   margin-right: $comp-locationselector-icon-text-gap;
+  font-weight: 500;
 }
 .location-selector-icon-wrapper {
   font-size: 24px; // Or use a token if you have one for this size

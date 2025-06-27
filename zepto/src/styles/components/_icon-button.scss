@@ -1,3 +1,6 @@
+@import "../system/_tokens.scss";
+@import "./_tokens.scss";
+
 .icon-button {
   display: flex;
   flex-direction: column;
@@ -5,17 +8,18 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 8px;
-  font-family: "TT Norms Pro", sans-serif;
+  padding: $sys-spacing-sm;
+  font-family: $comp-iconbutton-font-family;
 }
 .icon-button-icon-wrapper {
-  font-size: 26px;
-  color: #222;
-  margin-bottom: 8px;
+  font-size: $comp-iconbutton-icon-size;
+  color: $comp-iconbutton-icon-color;
+  margin-bottom: $sys-spacing-sm;
   display: flex;
   align-items: center;
 }
 .icon-button-label {
-  font-size: 18px;
-  color: #222;
+  font-size: $comp-iconbutton-font-size;
+  color: $comp-iconbutton-text-color;
+  font-weight: $sys-font-weight-medium;
 }

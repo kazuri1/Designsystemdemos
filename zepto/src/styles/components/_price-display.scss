@@ -1,0 +1,100 @@
+@import "../system/_tokens.scss";
+@import "./_tokens.scss";
+
+.price-display {
+  font-family: $comp-pricedisplay-font-family;
+  font-size: $comp-pricedisplay-font-size;
+  font-weight: $comp-pricedisplay-font-weight;
+  color: $comp-pricedisplay-color;
+  display: inline-flex;
+  align-items: baseline;
+  gap: $sys-spacing-xs;
+
+  &__currency {
+    color: $comp-pricedisplay-currency-color;
+    font-size: 0.7em;
+    margin-right: 2px;
+  }
+  &__value {
+    color: $comp-pricedisplay-color;
+  }
+}
+
+.price-display-card__mrp {
+  color: $sys-color-text-primary;
+  position: relative;
+  display: inline-block;
+  font-weight: $sys-font-weight-bold;
+}
+.price-display-card__mrp::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  background: $sys-color-error;
+  border-radius: $sys-border-radius-sm;
+  transform: translateY(-50%);
+  width: 100%;
+  pointer-events: none;
+}
+
+.pricing-card {
+  width: 160px;
+  border-radius: $comp-pricingcard-border-radius;
+  overflow: hidden;
+  box-shadow: $comp-pricingcard-shadow;
+  border: $comp-pricingcard-border;
+  display: flex;
+  flex-direction: column;
+  font-family: $comp-pricingcard-font-family;
+}
+
+.product-card {
+  width: 160px;
+}
+
+.pricing-card__top {
+  background: $comp-pricingcard-bg-top;
+  color: $comp-pricingcard-price-color;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: $comp-pricingcard-price-font-weight;
+  padding: 8px 0 4px 0;
+}
+
+.pricing-card__price {
+  color: $comp-pricingcard-price-color;
+}
+
+.pricing-card__bottom {
+  background: $comp-pricingcard-bg-bottom;
+  color: $comp-pricingcard-mrp-color;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: $comp-pricingcard-mrp-font-weight;
+  position: relative;
+  padding: 6px 0 4px 0;
+}
+
+.pricing-card__mrp {
+  color: $comp-pricingcard-mrp-color;
+  position: relative;
+  display: inline-block;
+  font-weight: $comp-pricingcard-mrp-font-weight;
+}
+
+.pricing-card__mrp::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: $comp-pricingcard-mrp-strike-height;
+  background: $comp-pricingcard-mrp-strike-color;
+  border-radius: $sys-border-radius-sm;
+  transform: translateY(-50%);
+  width: 100%;
+  pointer-events: none;
+}

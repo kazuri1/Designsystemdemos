@@ -1,0 +1,28 @@
+.add-button {
+  font-family: $comp-addbutton-font-family;
+  font-size: $comp-addbutton-font-size;
+  font-weight: $comp-addbutton-font-weight;
+  color: $comp-addbutton-text-color;
+  background: $comp-addbutton-bg;
+  border: 2px solid $comp-addbutton-border-color;
+  border-radius: $comp-addbutton-border-radius;
+  padding: $comp-addbutton-padding;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.15s;
+  text-align: center;
+  min-width: 80px;
+  box-shadow: none;
+  &:hover,
+  &:focus {
+    background: $comp-addbutton-hover-bg;
+    border-color: $comp-addbutton-hover-border;
+  }
+}
+
+.add-button--small {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 7px 20px;
+  min-width: 70px;
+}

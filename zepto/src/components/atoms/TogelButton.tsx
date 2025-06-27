@@ -19,7 +19,7 @@ export const TogelButton = ({
   ...props
 }: TogelButtonProps) => {
   const [internalState, setInternalState] = useState<"on" | "off">(
-    state || "on"
+    state !== undefined ? state : "off"
   );
   const isControlled = state !== undefined;
   const isOn = isControlled ? state === "on" : internalState === "on";

@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta } from "@storybook/react";
-import { Cards } from "../components/molecules/Cards";
+import { Cards, SupersaverCards } from "../components/molecules/Cards";
 import "../styles/theme.scss";
 
 const meta = {
@@ -15,3 +15,5 @@ const meta = {
 export default meta;
 
 export const Default = () => <Cards />;
+
+export const Supersaver = () => <SupersaverCards />;

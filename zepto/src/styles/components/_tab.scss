@@ -8,14 +8,19 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 8px 12px 0 12px;
+  padding: $comp-tab-padding;
   font-family: $comp-iconbutton-font-family;
-  transition: color 0.2s;
+  transition: all $comp-tab-transition-duration $comp-tab-transition-ease;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
 
   &__icon-wrapper {
-    width: 26px;
-    height: 26px;
-    margin-bottom: 4px;
+    width: $comp-tab-icon-wrapper-size;
+    height: $comp-tab-icon-wrapper-size;
+    margin-bottom: $comp-tab-icon-wrapper-margin-bottom;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,34 +29,44 @@
     width: 100%;
     height: 100%;
     filter: grayscale(1) brightness(0.7);
-    transition: filter 0.2s;
+    transition: all $comp-tab-transition-duration $comp-tab-transition-ease;
   }
   &__label {
     font-size: $comp-iconbutton-font-size;
     color: $comp-iconbutton-text-color;
-    transition: color 0.2s;
+    transition: color $comp-tab-transition-duration $comp-tab-transition-ease;
+    font-weight: $comp-tab-label-font-weight-normal;
   }
 
   &--active {
     .tab__label {
-      color: #b123e6;
-      font-weight: 700;
+      color: var(--theme-accent, #b123e6);
+      font-weight: $comp-tab-label-font-weight-active;
     }
     .tab__icon {
-      color: #b123e6;
-      filter: none;
+      filter: grayscale(0) brightness(1) saturate(2)
+        hue-rotate(calc(var(--theme-hue, 0) * 1deg));
     }
     position: relative;
     &::after {
       content: "";
       display: block;
       position: absolute;
-      left: 8px;
-      right: 8px;
-      bottom: -15px;
-      height: 4px;
-      border-radius: 2px 2px 0 0;
-      background: #b123e6;
+      left: $comp-tab-active-indicator-left;
+      right: $comp-tab-active-indicator-right;
+      bottom: $comp-tab-active-indicator-bottom;
+      height: $comp-tab-active-indicator-height;
+      border-radius: $comp-tab-active-indicator-border-radius;
+      background: linear-gradient(
+        90deg,
+        var(--theme-gradient-start, #b123e6) 0%,
+        var(--theme-gradient-end, #8a1fd1) 100%
+      );
     }
+  }
+
+  /* Make inactive icons match the text color */
+  &:not(.tab--active) .tab__icon {
+    filter: grayscale(1) brightness(0.3);
   }
 }

@@ -1,5 +1,7 @@
 $sys-font-family: "Inter", Arial, sans-serif;
 $sys-font-family-search: "TT Norms Pro", sans-serif;
+
+// Colors
 $sys-color-togel-gradient-start: #1ecb5c;
 $sys-color-togel-gradient-end: #0a9d3a;
 $sys-color-togel-yellow: #ffe066;
@@ -14,6 +16,79 @@ $sys-color-togel-off-shadow: #6b6b6b;
 $sys-color-togel-off-coin-bg: #fff;
 $sys-color-togel-off-coin-border: #d6dde7;
 $sys-color-togel-off-coin-symbol: #d6dde7;
+
+// Common colors
+$sys-color-text-primary: #222;
+$sys-color-text-secondary: #888;
+$sys-color-text-tertiary: #5a6b7a;
+$sys-color-bg-white: #fff;
+$sys-color-bg-light: #f3f6fa;
+$sys-color-bg-success: #e6f4ea;
+$sys-color-success: #1ca14a;
+$sys-color-error: #e53935;
+$sys-color-warning: #ef4444;
+$sys-color-warning-light: #fff86b;
+
+// Spacing
+$sys-spacing-xs: 4px;
+$sys-spacing-sm: 8px;
+$sys-spacing-md: 12px;
+$sys-spacing-lg: 16px;
+$sys-spacing-xl: 24px;
+$sys-spacing-xxl: 32px;
+
+// Border radius
+$sys-border-radius-sm: 6px;
+$sys-border-radius-md: 10px;
+$sys-border-radius-lg: 16px;
+$sys-border-radius-xl: 32px;
+
+// Transitions
+$sys-transition-duration: 0.2s;
+$sys-transition-ease: ease;
+
+// Font weights
+$sys-font-weight-normal: 400;
+$sys-font-weight-medium: 500;
+$sys-font-weight-semibold: 600;
+$sys-font-weight-bold: 700;
+$sys-font-weight-extrabold: 800;
+
+// Icon sizes
+$sys-icon-size-sm: 22px;
+$sys-icon-size-md: 24px;
+$sys-icon-size-lg: 26px;
+
+// Tab tokens
+$sys-tab-padding: 8px 12px 0 12px;
+$sys-tab-icon-wrapper-size: 26px;
+$sys-tab-icon-wrapper-margin-bottom: 4px;
+$sys-tab-active-indicator-height: 4px;
+$sys-tab-active-indicator-bottom: -15px;
+$sys-tab-active-indicator-left: 8px;
+$sys-tab-active-indicator-right: 8px;
+$sys-tab-active-indicator-border-radius: 2px 2px 0 0;
+$sys-tab-label-font-weight-normal: 500;
+$sys-tab-label-font-weight-active: 700;
+
+// TopNav tokens
+$sys-topnav-padding: 16px 0;
+$sys-topnav-min-height: 80px;
+$sys-topnav-z-index: 10;
+$sys-topnav-left-gap: 12px;
+$sys-topnav-left-item-margin: 24px;
+$sys-topnav-left-last-item-margin: 16px;
+$sys-topnav-search-padding: 0 48px;
+$sys-topnav-right-gap: 24px;
+$sys-topnav-right-margin-left: 24px;
+$sys-topnav-logo-height: 30px;
+$sys-topnav-logo-margin-left: 32px;
+$sys-topnav-togel-scale: 0.65;
+$sys-topnav-location-margin-left: -80px;
+$sys-topnav-searchbar-height: 14px;
+$sys-topnav-right-last-item-margin: 32px;
+
+// Toggle specific tokens
 $sys-togel-anim-duration: 0.5s;
 $sys-togel-anim-ease: cubic-bezier(0.22, 1, 0.36, 1);
 $sys-togel-circle-size: 40px;
@@ -29,6 +104,8 @@ $sys-togel-morpher-scale-on: 1.1;
 $sys-togel-morpher-scale-off: 1;
 $sys-togel-morph-scale-on: 1;
 $sys-togel-morph-scale-off: 0.7;
+
+// Searchbar tokens
 $sys-searchbar-bg: #fff;
 $sys-searchbar-border: #e5e5f7;
 $sys-searchbar-radius: 10px;
@@ -39,15 +116,83 @@ $sys-searchbar-font-family: $sys-font-family;
 $sys-searchbar-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.03);
 $sys-searchbar-shadow-focus: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 $sys-searchbar-border-color-focus: #c0c0d8;
-$sys-icon-size-md: 24px;
+
+// Icon button tokens
 $sys-iconbutton-text-color: #222;
 $sys-iconbutton-icon-color: #222;
 $sys-iconbutton-icon-size: 26px;
 $sys-iconbutton-font-family: "TT Norms Pro", sans-serif;
 $sys-iconbutton-font-size: 18px;
 $sys-iconbutton-icon-text-gap: 8px;
+
+// Location selector tokens
 $sys-locationselector-text-color: #222;
 $sys-locationselector-icon-color: #222;
 $sys-locationselector-font-family: "TT Norms Pro", sans-serif;
 $sys-locationselector-font-size: 18px;
 $sys-locationselector-icon-text-gap: 8px;
+
+// Add button tokens
+$sys-addbutton-font-family: $sys-font-family;
+$sys-addbutton-font-size: 1.4rem;
+$sys-addbutton-font-weight: 700;
+$sys-addbutton-text-color: #008c3c;
+$sys-addbutton-border-color: #008c3c;
+$sys-addbutton-border-radius: 10px;
+$sys-addbutton-bg: #fff;
+$sys-addbutton-padding: 8px 24px;
+
+// Heading tokens
+$sys-heading-h2-font-size: 1.25rem;
+$sys-heading-h2-font-weight: 700;
+$sys-heading-h2-color: #222;
+$sys-heading-h2-margin: 32px auto 0 auto;
+
+// Product card tokens
+$sys-productcard-bg: #fff;
+$sys-productcard-border-radius: 16px;
+$sys-productcard-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+$sys-productcard-title-font-size: 1.1rem;
+$sys-productcard-title-font-weight: 700;
+$sys-productcard-desc-font-size: 1rem;
+$sys-productcard-desc-font-weight: 500;
+$sys-productcard-label-bg: #e6f4ea;
+$sys-productcard-label-color: #1ca14a;
+$sys-productcard-rating-bg: #e6f4ea;
+$sys-productcard-rating-color: #1ca14a;
+$sys-productcard-rating-star-bg: #1ca14a;
+$sys-productcard-rating-star-color: #fff;
+
+// CSS Custom Properties for JavaScript access
+:root {
+  --sys-color-text-primary: #{$sys-color-text-primary};
+  --sys-color-text-secondary: #{$sys-color-text-secondary};
+  --sys-color-text-tertiary: #{$sys-color-text-tertiary};
+  --sys-color-bg-white: #{$sys-color-bg-white};
+  --sys-color-bg-light: #{$sys-color-bg-light};
+  --sys-color-bg-success: #{$sys-color-bg-success};
+  --sys-color-success: #{$sys-color-success};
+  --sys-color-error: #{$sys-color-error};
+  --sys-color-warning: #{$sys-color-warning};
+  --sys-color-warning-light: #{$sys-color-warning-light};
+  --sys-spacing-xs: #{$sys-spacing-xs};
+  --sys-spacing-sm: #{$sys-spacing-sm};
+  --sys-spacing-md: #{$sys-spacing-md};
+  --sys-spacing-lg: #{$sys-spacing-lg};
+  --sys-spacing-xl: #{$sys-spacing-xl};
+  --sys-spacing-xxl: #{$sys-spacing-xxl};
+  --sys-border-radius-sm: #{$sys-border-radius-sm};
+  --sys-border-radius-md: #{$sys-border-radius-md};
+  --sys-border-radius-lg: #{$sys-border-radius-lg};
+  --sys-border-radius-xl: #{$sys-border-radius-xl};
+  --sys-transition-duration: #{$sys-transition-duration};
+  --sys-transition-ease: #{$sys-transition-ease};
+  --sys-font-weight-normal: #{$sys-font-weight-normal};
+  --sys-font-weight-medium: #{$sys-font-weight-medium};
+  --sys-font-weight-semibold: #{$sys-font-weight-semibold};
+  --sys-font-weight-bold: #{$sys-font-weight-bold};
+  --sys-font-weight-extrabold: #{$sys-font-weight-extrabold};
+  --sys-icon-size-sm: #{$sys-icon-size-sm};
+  --sys-icon-size-md: #{$sys-icon-size-md};
+  --sys-icon-size-lg: #{$sys-icon-size-lg};
+}

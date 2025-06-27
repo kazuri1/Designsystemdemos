@@ -1,0 +1,10 @@
+@import "./system/_tokens.scss";
+@import "./components/_tokens.scss";
+
+// Super Saver On theme overrides (example)
+$comp-togel-bg-gradient: linear-gradient(90deg, #1ecb5c 0%, #0a9d3a 100%);
+$comp-togel-text-super: #fff;
+$comp-togel-shadow-super: 2px 2px 0 #222222;
+$comp-togel-off-bg: #d6dde7;
+$comp-togel-off-text-super: #3a4252;
+$comp-togel-off-shadow-super: 2px 2px 0 #6b6b6b;

@@ -48,6 +48,25 @@ const cardData = [
   },
 ];
 
+const supersaverCardData = [
+  { src: "/assets/zeptosupersavercards/Atta.webp", alt: "Atta" },
+  { src: "/assets/zeptosupersavercards/rice.webp", alt: "Rice" },
+  { src: "/assets/zeptosupersavercards/Oil.webp", alt: "Oil" },
+  {
+    src: "/assets/zeptosupersavercards/Dals & Pulses.webp",
+    alt: "Dals & Pulses",
+  },
+  {
+    src: "/assets/zeptosupersavercards/Dairy,Bread and Eggs.webp",
+    alt: "Dairy, Bread and Eggs",
+  },
+  {
+    src: "/assets/zeptosupersavercards/Fruits and Vegetables.webp",
+    alt: "Fruits and Vegetables",
+  },
+  { src: "/assets/zeptosupersavercards/Daily Goods.webp", alt: "Daily Goods" },
+];
+
 export const Cards = () => (
   <div style={{ display: "flex", gap: 32 }}>
     {cardData.map((card) => (
@@ -56,6 +75,19 @@ export const Cards = () => (
         src={card.src}
         alt={card.alt}
         style={{ width: 100, height: "auto", borderRadius: 12 }}
+      />
+    ))}
+  </div>
+);
+
+export const SupersaverCards = () => (
+  <div style={{ display: "flex", gap: 32 }}>
+    {supersaverCardData.map((card) => (
+      <img
+        key={card.alt}
+        src={card.src}
+        alt={card.alt}
+        style={{ width: 200, height: "auto", borderRadius: 12 }}
       />
     ))}
   </div>

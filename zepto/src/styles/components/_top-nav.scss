@@ -1,63 +1,66 @@
 @import "../system/_tokens.scss";
+@import "./_tokens.scss";
 
 .top-nav {
   width: 100%;
   margin: 0;
-  background: linear-gradient(to bottom, rgba(149, 14, 219, 0.2), #ffffff);
-  padding: 16px 0;
-  min-height: 80px;
+  background: transparent;
+  padding: $comp-topnav-padding;
+  min-height: $comp-topnav-min-height;
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  position: relative;
+  z-index: $comp-topnav-z-index;
 }
 
 .top-nav__left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: $comp-topnav-left-gap;
 }
 
 .top-nav__left > * {
-  margin-right: 24px;
+  margin-right: $comp-topnav-left-item-margin;
 }
 
 .top-nav__left > *:last-child {
-  margin-right: 16px;
+  margin-right: $comp-topnav-left-last-item-margin;
 }
 
 .top-nav__search {
   flex-grow: 1;
-  padding: 0 48px;
+  padding: $comp-topnav-search-padding;
 }
 
 .top-nav__right {
   display: flex;
   justify-content: flex-end;
-  gap: 24px;
-  margin-left: 24px;
+  gap: $comp-topnav-right-gap;
+  margin-left: $comp-topnav-right-margin-left;
 }
 
 .top-nav__logo {
-  height: 30px;
-  margin-left: 32px;
+  height: $comp-topnav-logo-height;
+  margin-left: $comp-topnav-logo-margin-left;
 }
 
 .top-nav .togel-button {
-  transform: scale(0.65);
+  transform: scale($comp-topnav-togel-scale);
   transform-origin: left;
 }
 
 .top-nav .location-selector {
-  margin-left: -80px;
+  margin-left: $comp-topnav-location-margin-left;
   flex-shrink: 0;
 }
 
 .top-nav .searchbar-container {
-  height: 14px;
+  height: $comp-topnav-searchbar-height;
 }
 
 .top-nav__right > *:last-child {
-  margin-right: 32px;
+  margin-right: $comp-topnav-right-last-item-margin;
 }

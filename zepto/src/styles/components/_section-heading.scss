@@ -1,0 +1,11 @@
+.section-heading {
+  font-size: $comp-sectionheading-font-size;
+  font-weight: $comp-sectionheading-font-weight;
+  color: $comp-sectionheading-color;
+  margin: $comp-sectionheading-margin;
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}

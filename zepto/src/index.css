@@ -13,6 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
   padding: 0 !important;
   margin: 0 !important;
+
+  /* Theme custom properties */
+  --theme-gradient-start: #b123e6;
+  --theme-gradient-end: #8a1fd1;
+  --theme-accent: #b123e6;
+  --theme-text: #222;
+  --theme-bg: #fff;
 }
 
 a {

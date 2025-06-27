@@ -1,18 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import type { Meta } from "@storybook/react";
 import { Tab } from "../components/atoms/Tab";
+import { ThemeProvider, useTheme } from "../ThemeContext";
+import { getThemeForTab } from "../utils/themeManager";
+import AllIcon from "../components/icons/AllIcon";
+import CafeIcon from "../components/icons/CafeIcon";
+import HomeIcon from "../components/icons/HomeIcon";
+import ToysIcon from "../components/icons/ToysIcon";
+import FreshIcon from "../components/icons/FreshIcon";
+import ElectronicsIcon from "../components/icons/ElectronicsIcon";
+import MobileIcon from "../components/icons/MobileIcon";
+import BeautyIcon from "../components/icons/BeautyIcon";
+import FashionIcon from "../components/icons/FashionIcon";
 import "../styles/theme.scss";
 
-const icons: Record<string, string> = {
-  All: "/assets/Zepto Icons/All.svg",
-  Cafe: "/assets/Zepto Icons/cafe.svg",
-  Home: "/assets/Zepto Icons/home.svg",
-  Toys: "/assets/Zepto Icons/toys.svg",
-  Fresh: "/assets/Zepto Icons/fresh.svg",
-  Electronics: "/assets/Zepto Icons/electronics.svg",
-  Mobile: "/assets/Zepto Icons/mobile.svg",
-  Beauty: "/assets/Zepto Icons/beauty.svg",
-  Fashion: "/assets/Zepto Icons/fashion.svg",
+const icons: Record<string, React.ReactNode> = {
+  All: <AllIcon />,
+  Cafe: <CafeIcon />,
+  Home: <HomeIcon />,
+  Toys: <ToysIcon />,
+  Fresh: <FreshIcon />,
+  Electronics: <ElectronicsIcon />,
+  Mobile: <MobileIcon />,
+  Beauty: <BeautyIcon />,
+  Fashion: <FashionIcon />,
 };
 
 const tabList = [
@@ -34,12 +45,36 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
+  decorators: [
+    (Story) => (
+      <ThemeProvider>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 } satisfies Meta<typeof Tab>;
 
 export default meta;
 
-export const Default = () => {
+const TabStory = () => {
   const [active, setActive] = useState("All");
+  const { setTabTheme, setActiveTab } = useTheme();
+
+  const handleTabClick = (tabKey: string) => {
+    setActive(tabKey);
+    setActiveTab(tabKey);
+
+    // Get theme for the selected tab
+    const theme = getThemeForTab(tabKey);
+    setTabTheme(theme);
+  };
+
+  // Apply initial theme on component mount
+  useEffect(() => {
+    const initialTheme = getThemeForTab(active);
+    setTabTheme(initialTheme);
+  }, []);
+
   return (
     <div
       style={{
@@ -55,7 +90,7 @@ export const Default = () => {
             icon={icons[tab.key] || icons.All}
             label={tab.label}
             active={active === tab.key}
-            onClick={() => setActive(tab.key)}
+            onClick={() => handleTabClick(tab.key)}
           />
         ))}
       </div>
@@ -65,3 +100,5 @@ export const Default = () => {
     </div>
   );
 };
+
+export const Default = () => <TabStory />;
