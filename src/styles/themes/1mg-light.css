@@ -1,12 +1,13 @@
+@import "./default-light.css";
 :root {
-  --button-primary-background: #068bee;
+  --button-primary-background: #ff6f61;
   --button-primary-text: #ffffff;
-  --button-primary-border: #068bee;
+  --button-primary-border: #ff6f61;
   --button-primary-paddingY: 16px;
   --button-primary-paddingX: 32px;
-  --button-primary-hover-background: #266ef1;
+  --button-primary-hover-background: #e65c4f;
   --button-primary-hover-text: #ffffff;
-  --button-primary-hover-border: #266ef1;
+  --button-primary-hover-border: #e65c4f;
   --button-secondary-background: #f3f3f3;
   --button-secondary-text: #1f1f1f;
   --button-secondary-border: #bbbbbb;

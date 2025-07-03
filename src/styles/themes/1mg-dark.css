@@ -1,12 +1,13 @@
+@import "./default-dark.css";
 .dark {
-  --button-primary-background: #266ef1;
+  --button-primary-background: #ff6f61;
   --button-primary-text: #f3f3f3;
-  --button-primary-border: #266ef1;
+  --button-primary-border: #ff6f61;
   --button-primary-paddingY: 16px;
   --button-primary-paddingX: 32px;
-  --button-primary-hover-background: #068bee;
+  --button-primary-hover-background: #e65c4f;
   --button-primary-hover-text: #f3f3f3;
-  --button-primary-hover-border: #068bee;
+  --button-primary-hover-border: #e65c4f;
   --button-secondary-background: #1f1f1f;
   --button-secondary-text: #f3f3f3;
   --button-secondary-border: #5e5e5e;
