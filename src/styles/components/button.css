@@ -1,0 +1,35 @@
+/* styles/components/button.css */
+.btn {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-small {
+  padding: var(--button-sizes-small-paddingY) var(--button-sizes-small-paddingX);
+  font-size: var(--button-sizes-small-fontSize);
+}
+
+.btn-medium {
+  padding: var(--button-sizes-medium-paddingY)
+    var(--button-sizes-medium-paddingX);
+  font-size: var(--button-sizes-medium-fontSize);
+}
+
+.btn-large {
+  padding: var(--button-sizes-large-paddingY) var(--button-sizes-large-paddingX);
+  font-size: var(--button-sizes-large-fontSize);
+}
+
+.btn-primary {
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-text);
+  border-color: var(--button-primary-border);
+}
+
+.btn-primary:hover {
+  background-color: var(--button-primary-hover-background);
+  color: var(--button-primary-hover-text);
+  border-color: var(--button-primary-hover-border);
+}

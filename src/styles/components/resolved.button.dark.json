@@ -1,0 +1,38 @@
+{
+  "primary": {
+    "background": "#266EF1",
+    "text": "#F3F3F3",
+    "border": "#266EF1",
+    "paddingY": "16px",
+    "paddingX": "32px",
+    "hover": {
+      "background": "#068BEE",
+      "text": "#F3F3F3",
+      "border": "#068BEE"
+    }
+  },
+  "secondary": {
+    "background": "#1F1F1F",
+    "text": "#F3F3F3",
+    "border": "#5E5E5E",
+    "paddingY": "16px",
+    "paddingX": "32px",
+    "hover": {
+      "background": "#4B4B4B",
+      "text": "#F3F3F3",
+      "border": "#727272"
+    }
+  },
+  "danger": {
+    "background": "#DE1135",
+    "text": "#F3F3F3",
+    "border": "#DE1135",
+    "paddingY": "16px",
+    "paddingX": "32px",
+    "hover": {
+      "background": "#F83446",
+      "text": "#F3F3F3",
+      "border": "#F83446"
+    }
+  }
+}

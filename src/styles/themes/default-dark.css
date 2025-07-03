@@ -1,0 +1,61 @@
+.dark {
+  --button-primary-background: #266ef1;
+  --button-primary-text: #f3f3f3;
+  --button-primary-border: #266ef1;
+  --button-primary-paddingY: 16px;
+  --button-primary-paddingX: 32px;
+  --button-primary-hover-background: #068bee;
+  --button-primary-hover-text: #f3f3f3;
+  --button-primary-hover-border: #068bee;
+  --button-secondary-background: #1f1f1f;
+  --button-secondary-text: #f3f3f3;
+  --button-secondary-border: #5e5e5e;
+  --button-secondary-paddingY: 16px;
+  --button-secondary-paddingX: 32px;
+  --button-secondary-hover-background: #4b4b4b;
+  --button-secondary-hover-text: #f3f3f3;
+  --button-secondary-hover-border: #727272;
+  --button-danger-background: #de1135;
+  --button-danger-text: #f3f3f3;
+  --button-danger-border: #de1135;
+  --button-danger-paddingY: 16px;
+  --button-danger-paddingX: 32px;
+  --button-danger-hover-background: #f83446;
+  --button-danger-hover-text: #f3f3f3;
+  --button-danger-hover-border: #f83446;
+  --border-color: #444;
+  --header-paddingY: 16px;
+  --header-paddingX: 32px;
+  --font-family-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-weight-bold: 700;
+  --font-size-lg: 20px;
+  --font-size-sm: 14px;
+  --line-height-tight: 1.2;
+  --header-title-margin: 6px 0 6px 10px;
+  --header-welcome-margin: 10px;
+  --header-welcome-color: #f3f3f3;
+  --surface: #18181b;
+  --text-color: #f3f3f3;
+  --icon-color: #f3f3f3;
+  --icon-size: 24px;
+  --input-bg: #18181b;
+  --input-bg-disabled: #232326;
+  --input-bg-underline: transparent;
+  --input-border: #444;
+  --input-border-disabled: #232326;
+  --input-border-underline: #444;
+  --input-text: #f3f3f3;
+  --input-text-disabled: #727272;
+  --input-placeholder: #727272;
+  --input-icon: #727272;
+  --input-radius: 4px;
+  --input-font-size: 16px;
+  --input-font-family: var(
+    --font-family-sans,
+    "Inter",
+    "Helvetica Neue",
+    Arial,
+    sans-serif
+  );
+  background-color: #000 !important;
+}

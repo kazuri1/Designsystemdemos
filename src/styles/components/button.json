@@ -1,0 +1,93 @@
+{
+  "primary": {
+    "background": "blue.500",
+    "text": "white",
+    "border": "blue.500",
+    "paddingY": "spacing.3",
+    "paddingX": "spacing.5",
+    "hover": {
+      "background": "blue.600",
+      "text": "white",
+      "border": "blue.600"
+    }
+  },
+  "secondary": {
+    "background": "gray.50",
+    "text": "gray.900",
+    "border": "gray.300",
+    "paddingY": "spacing.3",
+    "paddingX": "spacing.5",
+    "hover": {
+      "background": "gray.100",
+      "text": "gray.900",
+      "border": "gray.400"
+    }
+  },
+  "danger": {
+    "background": "red.500",
+    "text": "white",
+    "border": "red.500",
+    "paddingY": "spacing.3",
+    "paddingX": "spacing.5",
+    "hover": {
+      "background": "red.600",
+      "text": "white",
+      "border": "red.600"
+    }
+  },
+  "sizes": {
+    "small": {
+      "paddingY": "spacing.2",
+      "paddingX": "spacing.3",
+      "fontSize": "13px"
+    },
+    "medium": {
+      "paddingY": "spacing.3",
+      "paddingX": "spacing.5",
+      "fontSize": "15px"
+    },
+    "large": {
+      "paddingY": "spacing.4",
+      "paddingX": "spacing.6",
+      "fontSize": "17px"
+    }
+  },
+  "dark": {
+    "primary": {
+      "background": "blue.600",
+      "text": "gray.50",
+      "border": "blue.600",
+      "paddingY": "spacing.3",
+      "paddingX": "spacing.5",
+      "hover": {
+        "background": "blue.500",
+        "text": "gray.50",
+        "border": "blue.500"
+      }
+    },
+    "secondary": {
+      "background": "gray.900",
+      "text": "gray.50",
+      "border": "gray.700",
+      "paddingY": "spacing.3",
+      "paddingX": "spacing.5",
+      "hover": {
+        "background": "gray.800",
+        "text": "gray.50",
+        "border": "gray.600"
+      }
+    },
+    "danger": {
+      "background": "red.600",
+      "text": "gray.50",
+      "border": "red.600",
+      "paddingY": "spacing.3",
+      "paddingX": "spacing.5",
+      "hover": {
+        "background": "red.500",
+        "text": "gray.50",
+        "border": "red.500"
+      }
+    }
+  }
+}

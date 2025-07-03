@@ -1,0 +1,93 @@
+{
+  "primary": {
+    "background": "#068BEE",
+    "text": "#FFFFFF",
+    "border": "#068BEE",
+    "paddingY": "16px",
+    "paddingX": "32px",
+    "hover": {
+      "background": "#266EF1",
+      "text": "#FFFFFF",
+      "border": "#266EF1"
+    }
+  },
+  "secondary": {
+    "background": "#F3F3F3",
+    "text": "#1F1F1F",
+    "border": "#BBBBBB",
+    "paddingY": "16px",
+    "paddingX": "32px",
+    "hover": {
+      "background": "#E8E8E8",
+      "text": "#1F1F1F",
+      "border": "#A6A6A6"
+    }
+  },
+  "danger": {
+    "background": "#F83446",
+    "text": "#FFFFFF",
+    "border": "#F83446",
+    "paddingY": "16px",
+    "paddingX": "32px",
+    "hover": {
+      "background": "#DE1135",
+      "text": "#FFFFFF",
+      "border": "#DE1135"
+    }
+  },
+  "sizes": {
+    "small": {
+      "paddingY": "8px",
+      "paddingX": "16px",
+      "fontSize": "13px"
+    },
+    "medium": {
+      "paddingY": "16px",
+      "paddingX": "32px",
+      "fontSize": "15px"
+    },
+    "large": {
+      "paddingY": "24px",
+      "paddingX": "40px",
+      "fontSize": "17px"
+    }
+  },
+  "dark": {
+    "primary": {
+      "background": "#266EF1",
+      "text": "#F3F3F3",
+      "border": "#266EF1",
+      "paddingY": "16px",
+      "paddingX": "32px",
+      "hover": {
+        "background": "#068BEE",
+        "text": "#F3F3F3",
+        "border": "#068BEE"
+      }
+    },
+    "secondary": {
+      "background": "#1F1F1F",
+      "text": "#F3F3F3",
+      "border": "#5E5E5E",
+      "paddingY": "16px",
+      "paddingX": "32px",
+      "hover": {
+        "background": "#4B4B4B",
+        "text": "#F3F3F3",
+        "border": "#727272"
+      }
+    },
+    "danger": {
+      "background": "#DE1135",
+      "text": "#F3F3F3",
+      "border": "#DE1135",
+      "paddingY": "16px",
+      "paddingX": "32px",
+      "hover": {
+        "background": "#F83446",
+        "text": "#F3F3F3",
+        "border": "#F83446"
+      }
+    }
+  }
+}
