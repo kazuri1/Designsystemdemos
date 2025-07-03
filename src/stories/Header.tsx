@@ -14,6 +14,7 @@ export interface HeaderProps {
   onLogin?: () => void;
   onLogout?: () => void;
   onCreateAccount?: () => void;
+  onHamburgerClick?: () => void;
 }
 
 export const Header = ({
@@ -21,11 +22,14 @@ export const Header = ({
   onLogin,
   onLogout,
   onCreateAccount,
+  onHamburgerClick,
 }: HeaderProps) => (
   <header>
     <div className="storybook-header">
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <GiHamburgerMenu size={24} style={{ color: "var(--icon-color)" }} />
+        <span style={{ cursor: "pointer" }} onClick={onHamburgerClick}>
+          <GiHamburgerMenu size={24} style={{ color: "var(--icon-color)" }} />
+        </span>
         <img
           src={pulselogo}
           alt="Pulse Logo"

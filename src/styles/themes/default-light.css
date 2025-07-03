@@ -85,3 +85,21 @@
   --input-font-size: 16px;
   --input-font-family: var(--font-family-sans, "Inter");
 }
+:root {
+  --drawer-background: surface;
+  --drawer-text: text-color;
+  --drawer-sectionTitle: colors.gray.600;
+  --drawer-itemIcon: colors.gray.500;
+  --drawer-itemText: text-color;
+  --drawer-itemHoverBg: colors.gray.100;
+  --drawer-itemHoverText: colors.blue.600;
+  --drawer-itemActiveBg: colors.blue.50;
+  --drawer-itemActiveText: colors.blue.700;
+  --drawer-borderRadius: 8px;
+  --drawer-elevation: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --drawer-padding: 24px;
+  --drawer-gap: 8px;
+  --drawer-fontSize: 16px;
+  --drawer-fontWeight: 500;
+  --drawer-fontFamily: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}

@@ -1,36 +1,34 @@
-import React from "react";
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React, { useState } from "react";
 import ThemeToggle from "./theme/ThemeToggle";
+import { Header } from "./stories/Header";
+import { Drawer } from "./components/organisms/Drawer";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [drawerVariant, setDrawerVariant] = useState<"default" | "icon-only">(
+    "default"
+  );
+
+  const handleHamburgerClick = () => {
+    setDrawerVariant((prev) => (prev === "default" ? "icon-only" : "default"));
+  };
 
   return (
     <div>
       <ThemeToggle />
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header
+        user={{ name: "Kazuri" }}
+        onHamburgerClick={handleHamburgerClick}
+      />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          minHeight: "calc(100vh - 64px)",
+        }}
+      >
+        <Drawer variant={drawerVariant} />
+        <div style={{ flex: 1 }} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   );
 }

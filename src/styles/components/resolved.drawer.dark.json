@@ -1,0 +1,18 @@
+{
+  "background": "surface",
+  "text": "text-color",
+  "sectionTitle": "colors.gray.400",
+  "itemIcon": "colors.gray.400",
+  "itemText": "text-color",
+  "itemHoverBg": "colors.gray.800",
+  "itemHoverText": "colors.blue.300",
+  "itemActiveBg": "colors.blue.900",
+  "itemActiveText": "colors.blue.200",
+  "borderRadius": "8px",
+  "elevation": "0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1)",
+  "padding": "24px",
+  "gap": "8px",
+  "fontSize": "16px",
+  "fontWeight": 500,
+  "fontFamily": "'Inter', 'Helvetica Neue', Arial, sans-serif"
+}

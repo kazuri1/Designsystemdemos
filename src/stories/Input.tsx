@@ -8,15 +8,29 @@ export interface InputProps
   variant?: "default" | "disabled" | "underline";
   placeholder?: string;
   options?: string[];
+  asText?: boolean;
 }
 
 export const Input: React.FC<InputProps> = ({
   variant = "default",
   placeholder = "Placeholder",
   options = [],
+  asText = false,
   ...props
 }) => {
   const isDisabled = variant === "disabled" || props.disabled;
+  if (asText) {
+    return (
+      <div className={`input-wrapper input-${variant}`}>
+        <input
+          className="input"
+          placeholder={placeholder}
+          disabled={isDisabled}
+          {...(props as React.InputHTMLAttributes<HTMLInputElement>)}
+        />
+      </div>
+    );
+  }
   return (
     <div className={`input-wrapper input-${variant}`}>
       <select className="input" disabled={isDisabled} {...props}>
