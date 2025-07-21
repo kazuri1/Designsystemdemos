@@ -1,9 +1,9 @@
 {
-  "background": "surface",
-  "text": "text-color",
+  "background": "var(--surface)",
+  "text": "var(--brand-primary)",
   "sectionTitle": "colors.gray.400",
-  "itemIcon": "colors.gray.400",
-  "itemText": "text-color",
+  "itemIcon": "var(--brand-primary)",
+  "itemText": "var(--brand-primary)",
   "itemHoverBg": "colors.gray.800",
   "itemHoverText": "colors.blue.300",
   "itemActiveBg": "colors.blue.900",

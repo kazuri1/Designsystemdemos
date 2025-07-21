@@ -1,0 +1,132 @@
+.stock-availability-chart-card {
+  background: var(--surface, #fff);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 20px 24px 18px 24px;
+  max-width: 620px;
+  width: 100%;
+  font-family: var(
+    --drawer-fontFamily,
+    "Inter",
+    "Helvetica Neue",
+    Arial,
+    sans-serif
+  );
+}
+.stock-availability-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color, #1f1f1f);
+  margin-bottom: 12px;
+}
+.stock-availability-totals-row {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-bottom: 10px;
+}
+.stock-availability-label {
+  font-size: 12px;
+  color: var(--drawer-sectionTitle, #868686);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+}
+.stock-availability-total {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color, #1f1f1f);
+}
+.stock-availability-bar-row {
+  margin-bottom: 12px;
+}
+.stock-availability-bar-bg {
+  display: flex;
+  flex-direction: row;
+  height: 8px;
+  width: 100%;
+  background: #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.stock-availability-bar-segment {
+  height: 100%;
+}
+.stock-availability-bar-legend-row {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-bottom: 2px;
+}
+.stock-availability-bar-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+.stock-availability-bar-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.stock-availability-bar-legend-label {
+  color: var(--drawer-sectionTitle, #868686);
+}
+.stock-availability-lowstock-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.stock-availability-lowstock-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--drawer-sectionTitle, #868686);
+}
+.stock-availability-lowstock-viewall {
+  font-size: 12px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.stock-availability-lowstock-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.stock-availability-lowstock-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+}
+body.dark .stock-availability-lowstock-item {
+  background: var(--surface, #232326);
+  border: 1px solid #444;
+}
+.stock-availability-lowstock-name {
+  flex: 1;
+  color: var(--text-color, #1f1f1f);
+}
+.stock-availability-lowstock-qty {
+  color: var(--drawer-sectionTitle, #868686);
+  font-size: 13px;
+}
+.stock-availability-lowstock-order {
+  color: #3b82f6;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 8px;
+  cursor: pointer;
+}

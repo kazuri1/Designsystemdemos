@@ -68,6 +68,7 @@
   --header-title-margin: 6px 0 6px 10px;
   --header-welcome-margin: 10px;
   --header-welcome-color: #333;
+  --background: #fff;
   --surface: #fff;
   --text-color: #1f1f1f;
   --icon-color: #1f1f1f;
@@ -85,11 +86,15 @@
   --input-radius: 4px;
   --input-font-size: 16px;
   --input-font-family: var(--font-family-sans, "Inter");
+  --amount-color: #868686;
+  --patients-bar-bg: #e0e7ff;
+  --income-bar: #ff9800;
+  --expense-bar: #ffb74d;
 }
 :root {
   --drawer-background: surface;
   --drawer-text: text-color;
-  --drawer-sectionTitle: colors.gray.600;
+  --drawer-sectionTitle: #868686;
   --drawer-itemIcon: colors.gray.500;
   --drawer-itemText: text-color;
   --drawer-itemHoverBg: colors.gray.100;

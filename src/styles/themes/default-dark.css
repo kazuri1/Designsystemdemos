@@ -1,4 +1,4 @@
-.dark {
+body.dark {
   --button-primary-background: #266ef1;
   --button-primary-text: #f3f3f3;
   --button-primary-border: #266ef1;
@@ -34,7 +34,8 @@
   --header-title-margin: 6px 0 6px 10px;
   --header-welcome-margin: 10px;
   --header-welcome-color: #f3f3f3;
-  --surface: #18181b;
+  --background: #000;
+  --surface: #181818;
   --text-color: #f3f3f3;
   --icon-color: #f3f3f3;
   --icon-size: 24px;
@@ -57,7 +58,12 @@
     Arial,
     sans-serif
   );
+  --amount-color: #f3f3f3;
+  --patients-bar-bg: #232326;
   background-color: #000 !important;
+}
+body.dark .expenses-chart-card {
+  --amount-color: #f3f3f3;
 }
 .dark {
   --drawer-background: surface;

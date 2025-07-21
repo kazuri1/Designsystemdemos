@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import ThemeToggle from "./theme/ThemeToggle";
 import { Header } from "./stories/Header";
 import { Drawer } from "./components/organisms/Drawer";
+import { CashflowChart } from "./components/organisms/CashflowChart";
+import { ExpensesChart } from "./components/organisms/ExpensesChart";
+import { IncomeExpenseChart } from "./components/organisms/IncomeExpenseChart";
+import { PatientsChart } from "./components/organisms/PatientsChart";
+import { PopularTreatmentChart } from "./components/organisms/PopularTreatmentChart";
+import { StockAvailabilityChart } from "./components/organisms/StockAvailabilityChart";
 
 const themeCssMap: Record<string, Record<string, string>> = {
   pulse: {
@@ -34,6 +40,8 @@ function App() {
     document.head.appendChild(link);
     // Set body class for dark mode if needed
     document.body.classList.toggle("dark", theme === "dark");
+    // Always set body background color to black with !important
+    document.body.style.setProperty("background-color", "#000", "important");
   }, [brand, theme]);
 
   const handleHamburgerClick = () => {
@@ -45,7 +53,6 @@ function App() {
 
   return (
     <div>
-      <ThemeToggle />
       <Header
         user={{ name: "Kazuri" }}
         onHamburgerClick={handleHamburgerClick}
@@ -62,7 +69,49 @@ function App() {
         }}
       >
         <Drawer variant={drawerVariant} />
-        <div style={{ flex: 1 }} />
+        <div style={{ flex: 1 }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-start",
+              gap: 12, // reduced from 24 to 12
+              width: "100%",
+            }}
+          >
+            <div>
+              <CashflowChart />
+              <div
+                style={{
+                  marginTop: -6,
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: 24,
+                }}
+              >
+                <IncomeExpenseChart brand={brand} />
+                <div style={{ marginLeft: -10, marginTop: 20 }}>
+                  <PatientsChart />
+                  <div style={{ marginTop: 16 }}>
+                    <PopularTreatmentChart />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <ExpensesChart brand={brand} />
+              <div
+                style={{
+                  marginTop: 14,
+                  display: "flex",
+                  width: "100%",
+                }}
+              >
+                <StockAvailabilityChart brand={brand} />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
